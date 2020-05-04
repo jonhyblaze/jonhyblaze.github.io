@@ -1,76 +1,161 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-    </head>
-    
-    <style>
-    h100{#rectrangle; position: absolute;
-    width: 910px; height: 4096px; top: -30; left: 0;
-      }
-    body{font-family: Helvetica, sans-serif;
-        font-size:16px;font-weight:200;
-    } 
-  
-   .list{color: black;
-         text-decoration: none;
-       font-size: 0.9em;
-text-align: left;
-font-weight:450;
-   }
-    
-    #title{font-family: Helvetica, sans-serif;
-           font-size: 30px; text-align: center;
-        
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Idaho Film Festival</Title>
+
+
+
+<style>
+
+  body {
+  position: absolute;
+  padding-top: 10px;
+  text-align: center;
+  font-family: monaco, monospace;
+  background: url(https://images.unsplash.com/photo-1493804714600-6edb1cd93080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80);
+
+  background-size: 100%;
+  width: 100%;
+  z-index: 0;}
+
+
+
+    #submitrect{
+    #rectangle;
+    position: absolute;
+    width: 132px;
+    height: 44px;
+    left: 1242px;
+    top: 47px;
+    background: #201715;
+    border-radius: 22px;
+    margin-right: 2px;
+    padding-left: 0px;
+    margin-left: 5px;
+    z-index: 1;}
+
+.title{
+    position: absolute;
+    width: 662px;
+    height: 249px;
+    left: 40px;
+    top: 275px;
+
+    font-family: Open-Sans, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: left;
+    z-index: 1;}
+
+.submittext{
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    left: 1270px;
+    top: 55px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    z-index: 2;}
+
+.jury{
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    left: 1141px;
+    top: 55px;
+
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    z-index: 1;}
+
+.films{
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    left: 1040px;
+    top: 55px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    z-index: 1;}
+
+#logo{
+    image-size: 100px;
+    position: absolute;
+    width: 250px;
+    height: 95px;
+    left: 0px;
+    top: 50px;
+
+    padding-bottom: 30px;
+    z-index: 2;}
+
+.date{ /* 5 - 21 May 2020 */
+    position: absolute;
+    width: 170px;
+    height: 28px;
+    left: 40px;
+    top: 554px;
+
+    font-family: Helvetica;
+    text-align: left;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 20px;
+    line-height: 18px;
+    color: #FFFFFF;
+    z-index: 1;
     }
-     h3{font-family: Helvetica, sans-serif;
-           font-size: 120%;}      
-         h6{font-style: italic;
-             font-weight: 350;
-             font-family: arial, sans-serif;
-         }  
-           p{word-spacing:0.1px;
-               letter-spacing: 0.1px;
-           }
-    </style>
-    <body>
-    <h100></h100>
-        <h1 id="title">Anna's blog</h1>
 
-        <h3>My posts:</h3>
-        <ul>
-            <a href="#hustle"><li class="list">My hustle</li></a>
-            <a href="#plants"><li class="list">My plants</li></a>
-            <a href="#yoga"><li class="list">Yoga progress</li></a>
-        </ul>
-        
-        <h2 id="hustle">My hustle</h2>
-        <h6>3rd of May 2020</h6>
-        
-        <p>Hi folks, as you already know my name is Anna, but you probably don't know much else about me.<br /> So today i'm gonna adress just that. I was born in a small town, where I lived for a good part of my life, it was chill place with descent community, but I newer really fit it, it was too small for me at the time, I always wanted to live in a big city. <br><br>
-        
-My family was always supportive at the time, and they gave me chance to obtain good education, which I gladly did. Sadly, it wasn't enough for me to kick-off, the lack of parctical expirience wasn't giving me any chance to land a proper job.
-<br><br>
-But after some hastle I've made my way into the tech, so these days I spend my days mostly on the web prototypes.
-What are you guys think about my story, maybe somebody can share his in a coment section below. <br><br>Cheers guys, have a good one! </p>
-      
-       <!--second article----------------------------->
-        <h2 id="plants">My plants</h2>
-        <h6>10th of March 2020</h6>
-        <p>So as you alredy know I'm spending a lot of time by the computer, more time than I actually wan't, but I'm not complaining it's not what you think. Perhapse most biggest passion of my life are my plants. I got a lot of them, succulents, ficuses, avocados, you name it. <br><br>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Succulent_in_San_Francisco.JPG/1024px-Succulent_in_San_Francisco.JPG" width="330px">
-        </p>
-        <h2 id="yoga">Yoga progress</h2>
-        <h6>17th of January 2020</h6>
-        <p>
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Downward-Facing-Dog.JPG/2560px-Downward-Facing-Dog.JPG" width="330"> <br><br>
-            This year I've discovered a world of yoga! It's very challenging but more so rewarding. I encourage you guys to try it out, I'm pretty sure you gonna stick to it.
-One tip from me though, try to use an app to get into the rhythm, it a has been a great help, at list for me.
-<br><br>
-What are you guys think about my hobby, maybe someone here is also yoga adept? I inviting you in the coment section below!
+  .lincoln{
+    /* Lincoln Centre */
+    position: absolute;
+    width: 154px;
+    height: 28px;
+    left: 40px;
+    top: 597px;
 
-        </p>
-    </body>
-</html>
+    text-align: left;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 20px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding-top: 15px;}
+
+</style>
+
+<body>
+    <div class="submittext">Submit</div>
+    <div class="jury">Jury</div>
+    <div class="films">Films</div>
+    <div id="logo"><img src="https://jojud265nia2bj9sy4ah9b61-wpengine.netdna-ssl.com/wp-content/themes/filmlinc/dist/img/falc-reel-logo-white.svg" width="150"></div>
+    <p class="date">05-21 May 2020</p>
+    <div class="lincoln">Lincoln Centre</div>
+    <div class="title">New Idaho International Film Festival</div>
+    <h50 id="submitrect"></h50>
+
+</body>
