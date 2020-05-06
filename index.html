@@ -20,25 +20,16 @@
         background: url(https://images.unsplash.com/photo-1493804714600-6edb1cd93080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80);
         background-position: absolute;
         background-size: 100%;
-        width: auto;
+
         z-index: 1;
-        display: table;}
+        display: table;
+        width: 100%;
+        max-width: 1200px;
+        }
 
+        @media screen and (min-width:200px) and (max-width:1440px) {
+        }
 
-  #submitrect{
-      #rectangle;
-      position: absolute;
-      width: 132px;
-      height: 44px;
-      left: 1242px;
-      top: 47px;
-      background: #201715;
-      border-radius: 22px;
-      margin-right: 2px;
-      padding-left: 0px;
-      margin-left: 5px;
-      z-index: 1;
-      align-content: right}
 
 .title{
     position: absolute;
@@ -47,6 +38,9 @@
     left: 40px;
     top: 275px;
 
+    width: 100%;
+    max-width: 550px;
+
     font-family: Open-Sans, sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -54,13 +48,31 @@
     line-height: 130%;
     color: #FFFFFF;
     text-align: left;
-    z-index: 1;}
+    z-index: 1;
+  }
+
+  #submitrect{
+      #rectangle;
+      position: absolute;
+      width: 132px;
+      height: 44px;
+      right: 55px;
+      top: 47px;
+      background: #201715;
+      border-radius: 22px;
+      margin-right: 2px;
+      padding-left: 0px;
+      margin-left: 5px;
+      z-index: 1;
+      align-content: right
+      width:100%;
+    }
 
 .submittext{
     position: absolute;
     width: 76px;
     height: 28px;
-    left: 1270px;
+    right: 85px;
     top: 55px;
 
     font-family: Helvetica;
@@ -70,13 +82,14 @@
     line-height: 28px;
     text-align: right;
     color: #FFFFFF;
-    z-index: 2;}
+    z-index: 2;
+  }
 
 .jury{
     position: absolute;
     width: 76px;
     height: 28px;
-    left: 1141px;
+    right: 242px;;
     top: 55px;
 
 
@@ -87,13 +100,30 @@
     line-height: 28px;
     text-align: right;
     color: #FFFFFF;
-    z-index: 1;}
+    z-index: 1;
+  }
 
 .films{
     position: absolute;
     width: 76px;
     height: 28px;
-    left: 1040px;
+    right: 340px;
+    top: 55px;
+    text-align: right;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    z-index: 1;}
+
+.about{
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    right: 450px;
     top: 55px;
     text-align: right;
     font-family: Helvetica;
@@ -106,7 +136,6 @@
     z-index: 1;}
 
 #logo{
-    image-size: 100px;
     position: absolute;
     width: 250px;
     height: 95px;
@@ -155,10 +184,10 @@
 
 
 #page{
-      width: 1440px;
+      width: 1425px;
       height: 2500px
-      margin-left: auto;
-      margin-right: auto;}
+      margin-left: 0px;
+      margin-right: 0px;}
 
 h1{
   position: absolute;
@@ -176,12 +205,23 @@ h1{
 
 #jury{
       position: absolute;
-      top: 1900px;
+      top: 1800px;
       left: 220px;
       z-index: 2;
       font-size: 54px;
       font-family: Helvetica, sans-serif;
       color: white;
+}
+
+#about{
+      position: absolute;
+      top: 2800px;
+      left: 220px;
+      z-index: 2;
+      font-size: 54px;
+      font-family: Helvetica, sans-serif;
+      color: white;
+
 }
 
 
@@ -190,8 +230,9 @@ h1{
 #black{
       #rectangle;
       position: absolute;
-      width: 1440px;
-      height: 2300px;
+      max-width: 1440px;
+      width: 100%;
+      height: 2500px;
       left: 0px;
       top: 803px;
       z-index: 2;
@@ -202,12 +243,12 @@ h1{
 #pro{
       text-decoration: none;
       color: white;
-
 }
 
 a{
   text-decoration: none;
-  color: white;}
+  color: white;
+}
 
 
 </style>
@@ -219,6 +260,7 @@ a{
     <div class="submittext">Submit</div>
     <div class="jury"><a href="#jury">Jury</a></div>
     <div class="films"><a href="#pro">Films</a></div>
+    <div class="about"><a href="about">About</a></div>
     <div id="logo"><img src="https://jojud265nia2bj9sy4ah9b61-wpengine.netdna-ssl.com/wp-content/themes/filmlinc/dist/img/falc-reel-logo-white.svg" width="150"></div>
     <p class="date">05-21 May 2020</p>
     <div class="lincoln">Lincoln Centre</div>
@@ -226,15 +268,12 @@ a{
     <h50 id="submitrect"></h50>
     <h30 #black></h30>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
     <h30 id="black"></h30>
     <h1 id="pro">Program</h1>
     <h2 id="jury">Jury</h2>
+    <h3 id="about">About Us</h3>
 
 
   </div>
