@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Idaho Film Festival</Title>
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,16 +17,13 @@
 
   body {
         background: url(https://images.unsplash.com/photo-1493804714600-6edb1cd93080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80);
-        background-position: absolute;
-        background-size: 100%;
+        background-size: 1425px;
+
 
         z-index: 1;
         display: table;
         width: 100%;
-        max-width: 1200px;
-        }
-
-        @media screen and (min-width:200px) and (max-width:1440px) {
+        max-width: 1420px;
         }
 
 
@@ -40,33 +36,30 @@
 
     width: 100%;
     max-width: 550px;
-
-    font-family: Open-Sans, sans-serif;
+    margin-left: 120px;
+    font-family: Open Sans, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
     line-height: 130%;
-    color: #FFFFFF;
+    color: white;
     text-align: left;
     z-index: 1;
   }
 
-  #submitrect{
-      #rectangle;
-      position: absolute;
-      width: 132px;
-      height: 44px;
-      right: 55px;
-      top: 47px;
-      background: #201715;
-      border-radius: 22px;
-      margin-right: 2px;
-      padding-left: 0px;
-      margin-left: 5px;
-      z-index: 1;
-      align-content: right
-      width:100%;
-    }
+/* this is Submit black button rectangle*/
+.rect{
+  position: absolute;
+  width: 132px;
+  height: 44px;
+  right: 55px;
+  top: 47px;
+  background: #201715;
+  border-radius: 22px;
+  padding-left: 2px;
+  z-index: 0;
+
+     }
 
 .submittext{
     position: absolute;
@@ -75,9 +68,9 @@
     right: 85px;
     top: 55px;
 
-    font-family: Helvetica;
+    font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: 250;
+    font-weight: 100;
     font-size: 24px;
     line-height: 28px;
     text-align: right;
@@ -89,13 +82,14 @@
     position: absolute;
     width: 76px;
     height: 28px;
-    right: 242px;;
+    right: 242px;
     top: 55px;
+    margin-left: 50px;
 
 
-    font-family: Helvetica;
+    font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: 250;
+    font-weight: 200;
     font-size: 24px;
     line-height: 28px;
     text-align: right;
@@ -109,10 +103,12 @@
     height: 28px;
     right: 340px;
     top: 55px;
+    margin-left: 50px;
+
     text-align: right;
-    font-family: Helvetica;
+    font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: 250;
+    font-weight: 200;
     font-size: 24px;
     line-height: 28px;
     text-decoration: none;
@@ -125,10 +121,13 @@
     height: 28px;
     right: 450px;
     top: 55px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+
     text-align: right;
-    font-family: Helvetica;
+    font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: 250;
+    font-weight: 200;
     font-size: 24px;
     line-height: 28px;
     text-decoration: none;
@@ -139,7 +138,7 @@
     position: absolute;
     width: 250px;
     height: 95px;
-    left: 0px;
+    left: 120px;
     top: 50px;
 
     padding-bottom: 30px;
@@ -150,19 +149,20 @@
 
 .date{ /* 5 - 21 May 2020 */
     position: absolute;
-    width: 170px;
+    width: 200px;
     height: 28px;
     left: 40px;
     top: 554px;
-
-    font-family: Helvetica;
+    margin-left: 120px;
+    font-family: Roboto, sans-serif;
     text-align: left;
     font-style: normal;
-    font-weight: 250;
-    font-size: 20px;
-    line-height: 18px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
     color: #FFFFFF;
     z-index: 1;
+    padding-right: 150px;
     }
 
   .lincoln{
@@ -172,20 +172,21 @@
     height: 28px;
     left: 40px;
     top: 597px;
-
+    margin-left: 120px;
     text-align: left;
-    font-family: Helvetica;
+    font-family: Roboto, sans-serif;
+    text-align: left;
     font-style: normal;
-    font-weight: 250;
-    font-size: 20px;
-    line-height: 18px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
     color: #FFFFFF;
     padding-top: 15px;}
 
 
 #page{
       width: 1425px;
-      height: 2500px
+      height: 2500px;
       margin-left: 0px;
       margin-right: 0px;}
 
@@ -198,51 +199,343 @@ h1{
   font-weight: bold;
   font-size: 54px;
   line-height: 65px;
-  font-family: Helvetica, sans-serif;
+  font-family: sans-serif;
   color: white;
   z-index: 2;
-  text-decoration: none;}
+  text-decoration: none;
+  }
 
-#jury{
-      position: absolute;
-      top: 1800px;
-      left: 220px;
-      z-index: 2;
-      font-size: 54px;
-      font-family: Helvetica, sans-serif;
-      color: white;
-}
 
-#about{
-      position: absolute;
-      top: 2800px;
-      left: 220px;
-      z-index: 2;
-      font-size: 54px;
-      font-family: Helvetica, sans-serif;
-      color: white;
-
-}
 
 
 
 
 #black{
-      #rectangle;
       position: absolute;
-      max-width: 1440px;
-      width: 100%;
+      width: 1425px;
       height: 2500px;
       left: 0px;
       top: 803px;
       z-index: 2;
       background-color: black;
       display: table;
-      background-size: 100%;}
+      background-size: 100%;
+      }
 
-#pro{
+
+.program{
       text-decoration: none;
       color: white;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 65px;
+      }
+
+.hollywood{
+      position: absolute;
+      width: 450px;
+      height: 650px;
+      left: 220px;
+      top: 1050px;
+      z-index: 3;
+      }
+
+.hollywood div{
+  /* Once Upon a Time in Hollywood */
+
+
+      position: absolute;
+      width: 374px;
+      height: 80px;
+      left: 40px;
+      top: 540px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 40px;
+
+      color: #EDEAEA;
+      z-index: 4
+
+      }
+
+.joker{
+      position: absolute;
+      width: 450px;
+      height: 650px;
+      left: 770px;
+      top: 1050px;
+      z-index: 3;
+      }
+
+.joker div{
+      /* Joker */
+
+      position: absolute;
+      width: 374px;
+      height: 40px;
+      left: 40px;
+      top: 580px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 40px;
+      /* identical to box height */
+
+      color: #EDEAEA;
+      z-index: 3;
+      }
+
+
+
+
+.parasites{
+      position: absolute;
+      width: 450px;
+      height: 650px;
+      left: 220px;
+      top: 1800px;
+      z-index: 3;
+      }
+.parasites div{
+        /* Parasite */
+
+
+      position: absolute;
+      width: 374px;
+      height: 40px;
+      left: 40px;
+      top: 580px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 40px;
+      z-index: 3;
+      color: #EDEAEA;
+      }
+
+.lighthouse{
+      position: absolute;
+      width: 450px;
+      height: 650px;
+      left: 770px;
+      top: 1800px;
+      z-index: 3;
+      }
+
+.lighthouse div{
+
+        /* Lighthouse */
+
+      position: absolute;
+      width: 374px;
+      height: 40px;
+      left: 40px;
+      top: 580px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 40px;
+      z-index: 3;
+      color: #EDEAEA;
+      }
+
+
+  .h1-jury{
+            position: absolute;
+            left: 220px;
+            top: 2610px;
+            z-index: 2;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 65px;
+            color: white;
+            }
+
+.gaspar{
+            position: absolute;
+            width: 127px;
+            height: 190px;
+            left: 248px;
+            top: 2775px;
+            z-index:3;
+            }
+
+.gaspar-ellipse{
+              /* Ellipse 2 */
+
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            left: 248px;
+            top: 2775px;
+            z-index: 2;
+            border-radius: 100px;
+            background: #F8F8F6;
+            }
+.gaspar-name{
+              position: absolute;
+            width: 118px;
+            height: 88px;
+            left: 436px;
+            top: 2811px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 130%;
+            /* or 44px */
+
+            z-index: 2;
+            color: #EDEAEA;
+            }
+
+
+.lars{
+            position: absolute;
+            width: 160px;
+            height: 240px;
+            left: 770px;
+            top: 2764px;
+            z-index: 3;
+            }
+.lars-rect{
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            left: 770px;
+            top: 2775px;
+            z-index:2;
+            }
+
+.lars-name{
+              position: absolute;
+              width: 140px;
+              height: 88px;
+              left: 975px;
+              top: 2811px;
+
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 34px;
+              line-height: 130%;
+              /* or 44px */
+
+              z-index: 3;
+              color: #EDEAEA;
+              }
+
+
+.wong{
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      left: 231px;
+      top: 3035px;
+      z-index: 3;
+      }
+
+
+
+
+.wong-text{
+          position: absolute;
+          position: absolute;
+                width: 122px;
+                height: 88px;
+                left: 0px;
+                top: 259px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 34px;
+          line-height: 130%;
+          /* or 44px */
+
+
+          color: #EDEAEA;
+          z-index: :3;
+          }
+
+.gus{
+          position: absolute;
+          width: 160px;
+          height: 160px;
+          left: 770px;
+          top: 3035px;
+          z-index: 3;
+
+         }
+
+
+
+.gus-text{
+          position: absolute;
+          width: 137px;
+          height: 88px;
+          left: 0px;
+          top: 259px;
+
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 34px;
+          line-height: 130%;
+          /* or 44px */
+
+          z-index: 3;
+          color: #EDEAEA;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+    .h1-about{
+            position: absolute;
+            top: 3500px;
+            left: 50px;
+            z-index: 4;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 65px;
+            color: white;
+            text-align: left;
+            }
+
+.back{
+  position: absolute;
+
+height: 335px;
+left: 0px;
+top: 3282px;
+
+
 }
 
 a{
@@ -257,24 +550,67 @@ a{
 
 <body>
   <div id="page">
-    <div class="submittext">Submit</div>
-    <div class="jury"><a href="#jury">Jury</a></div>
-    <div class="films"><a href="#pro">Films</a></div>
-    <div class="about"><a href="about">About</a></div>
-    <div id="logo"><img src="https://jojud265nia2bj9sy4ah9b61-wpengine.netdna-ssl.com/wp-content/themes/filmlinc/dist/img/falc-reel-logo-white.svg" width="150"></div>
-    <p class="date">05-21 May 2020</p>
-    <div class="lincoln">Lincoln Centre</div>
-    <div class="title">New Idaho International Film Festival</div>
-    <h50 id="submitrect"></h50>
-    <h30 #black></h30>
+        <header class=head><div class="submittext">Submit</div>
+        <div class="jury"><a href="#jury">Jury</a></div>
+        <div class="films"><a href="#pro">Films</a></div>
+        <div class="about"><a href="about">About</a></div>
+
+        <div id="logo"><img src="https://jojud265nia2bj9sy4ah9b61-wpengine.netdna-ssl.com/wp-content/themes/filmlinc/dist/img/falc-reel-logo-white.svg" alt="logo" width="150"></div>
+        <div class="date">05-21 May 2020</div>
+        <div class="lincoln">Lincoln Centre</div>
+        <div class="title">New Idaho International Film Festival</div>
+        <div class="rect"></div>
 
 
+<main class="mainsection">
+     <div id="black"></div>
 
-    <h30 id="black"></h30>
-    <h1 id="pro">Program</h1>
-    <h2 id="jury">Jury</h2>
-    <h3 id="about">About Us</h3>
+           <h1 class="program">Program</h1>
+
+           <div class="hollywood">
+                        <img src="img/image2.png" alt="Ones In Upon A Time Hollywood" width="450px">
+                        <div>Once upon a time in Hollywood</div>
+                        </div>
+
+                        <div class="joker">
+                        <img src="img/rect3.png" alt="Joker" width="450px">
+                        <div>Joker</div>
+                        </div>
+
+                        <div class="parasites">
+                        <img src="img/rect4.png" alt="Parasites" width="450px">
+                        <div>Parasites</div>
+                        </div>
+
+                        <div class="lighthouse">
+                        <img src="img/rect5.png" alt="Lighthouse" width="450px">
+                        <div>Lighthouse</div>
+                        </div>
 
 
+               <h1 class="h1-jury">Jury</h1>
+                        <div class="gaspar">
+                        <img src="img/noe1.png" alt="Gaspar Noe" width="160px">
+                        </div>
+                        <div class="gaspar-ellipse"></div>
+                        <div class="gaspar-name">Gaspar Noe<div class="wong-text">Wong Kar-Wai</div></div>
+                        <div class="gus">
+                        <div><img src="img/gus4.png" alt="Gus Van Sant" width="160px"></div>
+                        </div>
+
+
+                        <div class="lars">
+                          <img src="img/trier2.png" alt="Lars Von Trier" width="160px">
+                        </div>
+                        <div class="lars-name">Lars Von Trier <div class="gus-text">Gus Van Sant</div></div>
+
+                        <div class="wong">
+                          <div><img src="img/wai3.png" alt="Wong Kar Wai" width="160px">
+                          <div></div>
+
+</main>
+
+  <div><h1 class="h1-about">About Us</h1></div>
+  <div class="back"><img src="img/image 4.png" alt="abstract background" width="1425px"></div>
   </div>
 </body>
